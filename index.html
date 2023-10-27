@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PIXELA VTUBER</title>
+    <link rel="stylesheet" href="./style.css">
+    <script>
+        function dispaly(){
+            document.getElementById("myus").innerHTML = document.getElementById("Username").value + "' Gallery"
+        }
+        function setimg() {
+            document.getElementById("imgg").style.backgroundImage = "url(" + document.getElementById("image_url").value + ")"
+        }
+    </script>
+</head>
+<body>
+    <div class="con">
+        <div class="profile">
+            <div>
+                <div class="flex">
+                    <div class="pro" id="imgg"></div>
+                    <div class="noti"></div>
+                    <div>
+                        <a href="https://google.com" class="on-sss">
+                        <p style="font-weight: 600;" id="myus">vtuber</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="flex2">
+                <div ><label>Username</label><input style="margin-left: 5px;" type="text" id="Username"><button style="margin-left: 5px;" onclick="dispaly()">set</button></div>
+                <div><label>image URL</label><input style="margin-left: 5px;" type="text" id="image_url"><button style="margin-left: 5px;" onclick="setimg()">set</button></div>
+                </div>
+            </div>
+        </div>
+        <div class="gallery">
+            <div class="gall-item" style="background-image: url(Hanabi_Lafy_PF.jpg);"></div>
+            <div class="gall-item" style="grid-column: span 2/span 2; background-image: url(maxresdefault.jpg);"></div>
+            <div class="gall-item" style="background-image: url(Kamiyu_Reirin_PF.jpg);"></div>
+            <div class="gall-item" style="background-image: url(Aranis_Elvene_PF.jpg);"></div>
+            <div class="gall-item" style="background-image: url(Nezumi_Elze.jpg);"></div>
+            <div class="gall-item" style="grid-row: span 2/span 2; background-image: url(Estaa_Slime_miniFile-1-675x1024.jpg);"></div>
+            <div class="gall-item" style="background-image: url(Umino_Ciala.jpg);"></div>
+            <div class="gall-item" style="background-image: url(Sisira_Hydrangea_Pixela.jpg);"></div>
+            <div class="gall-item" style="background-image: url(Draki_Kona_PF.jpg);"></div>
+            <div class="gall-item" style="background-image: url(AtaruKun.jpg);"></div>
+            <div class="gall-item"></div>
+            <div class="gall-item"></div>
+        </div>
+    </div>
+</body>
+</html>
